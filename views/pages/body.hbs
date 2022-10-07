@@ -1,15 +1,34 @@
 <html>
-    <head></head>
+    <head>
+        {{> structure/htmlhead }}
+
+        <title>Cloudflare Workers with Handlebars</title>
+
+    </head>
     <body>
         {{> structure/header }}
 
-        <h1>This is a thing that is being built.</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
 
-        <p>
-            <strong>Your name:</strong> {{name}}
-        </p>
+                    <div style="text-align: center; margin-bottom: 30px;">
+                        <div style="display: inline-block; width: 300px;">
+                            {{> logos/cloudflare }}
+                        </div>
+                    </div>
 
-        {{asyncTest name='Tester 2' age=49}}
+                    <h3>This template is rendered by Handlebars in a Cloudflare Worker</h3>
+
+                    <p>
+                        <strong>Your name:</strong> {{name}}
+                    </p>
+
+                    <pre>{{asyncTest name='Tester 2' age=49}}</pre>
+
+                </div>
+            </div>
+        </div>
 
         {{> structure/footer }}
     </body>

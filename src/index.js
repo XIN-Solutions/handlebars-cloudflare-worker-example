@@ -15,9 +15,9 @@ registerAsyncHelper(Handlebars,'asyncTest', function (options, context) {
 	return new Promise((resolve, reject) => {
 		setTimeout(
 			function() {
-				resolve(`Personal records: ${options.hash.name} || ${options.hash.age}`)
+				resolve(`Async render with params: ${options.hash.name} || ${options.hash.age}`)
 			},
-			1000
+			200
 		);
 	});
 
