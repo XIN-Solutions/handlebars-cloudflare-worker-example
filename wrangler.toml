@@ -1,0 +1,7 @@
+name = "hbs-worker"
+main = "src/index.js"
+compatibility_date = "2022-10-06"
+
+[build]
+command="npm run handlebars"
+watch_dir="views/"

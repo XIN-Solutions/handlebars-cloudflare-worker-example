@@ -1,0 +1,22 @@
+{
+  "name": "hbs-worker",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "handlebars": "^4.7.7",
+    "hbs-async-render": "^1.0.0"
+  },
+  "devDependencies": {
+    "wrangler": "2.1.6",
+    "mocha": "^10.0.0",
+    "hbs-import-transpile": "^1.0.4"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler publish",
+    "handlebars": "npm run compilehbs && npm run transpilehbs && rm src/*-original.js",
+    "compilehbs": "handlebars -e hbs -f src/pages-original.js views/pages/ && handlebars -e hbs -p -f src/partials-original.js views/partials/",
+    "transpilehbs": "hbs-import-transpile src/pages-original.js > assets/pages.js && hbs-import-transpile src/partials-original.js > assets/partials.js"
+  }
+}

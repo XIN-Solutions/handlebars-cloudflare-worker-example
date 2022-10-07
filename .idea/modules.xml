@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../hbs-async-render/.idea/hbs-async-render.iml" filepath="$PROJECT_DIR$/../hbs-async-render/.idea/hbs-async-render.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hbs-worker.iml" filepath="$PROJECT_DIR$/.idea/hbs-worker.iml" />
+    </modules>
+  </component>
+</project>
