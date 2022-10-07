@@ -24,8 +24,7 @@ Due to the set of technologies Cloudflare uses to make Workers possible, core No
 
 The runtime-only version of Handlebars on the other hand is smaller and does not rely on these Node packages.
 
-The only prerequisite of using the Handlebars runtime-only version is that all templates must be precompiled. Our project needs to be extended with a Custom Build step in the `wrangler.toml` file; and
-
+The only prerequisite of using the Handlebars runtime-only version is that all templates must be precompiled. Our project needs to be extended with a Custom Build step in the `wrangler.toml` file.
 
 Another constraint is that `require`-ing other files is not allowed without enabling the NodeJS compatibility layer, which will reduce performance of your Cloudflare Worker significantly.
 
