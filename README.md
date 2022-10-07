@@ -89,6 +89,5 @@ Now that we have configured out Cloudflare Workers project to precompile Handleb
 
 You can find the Github Repository here: 
 
-
-
+* https://github.com/XIN-Solutions/handlebars-cloudflare-worker-example
 
